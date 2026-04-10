@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Varela+Round&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%;
+    --primary: 45 99% 60%;
+    --secondary: 230 100% 56%;
+
+    --primary-accent: 45 75% 55%;
+    --foreground-accent: 0 0% 27%;
+    --hero-background: 240 6% 96%;
+  }
+
+  .dark {
+    --background: 0 0% 9%;
+    --foreground: 0 0% 100%;
+    --primary: 45 99% 60%;
+    --secondary: 230 100% 56%;
+
+    --primary-accent: 45 75% 55%;
+    --foreground-accent: 0 0% 64%;
+    --hero-background: 0 0% 10%;
+  }
+}
+
+/* Base styles */
+html {
+  @apply scroll-smooth;
+}
+
+
+
+body {
+  @apply text-lg bg-background text-foreground transition-colors duration-300;
+  /* font-family: "Source Sans 3", sans-serif; */
+  font-family: "Varela Round", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+p,
+a,
+button,
+span {
+  font-family: "Varela Round", sans-serif !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Hide scrollbar while maintaining scroll functionality */
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari and Opera */
+  }
+}
+
+.manrope {
+  /* font-family: "Manrope", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* font-family: "Manrope", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600 !important;
+}
+
+#logos svg {
+  @apply w-fit h-10 sm:h-12;
+}
+
+.benefit-section:last-of-type>div {
+  @apply mb-10;
+}

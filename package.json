@@ -1,0 +1,42 @@
+{
+  "name": "femtro",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@headlessui/react": "^2.1.8",
+    "@heroicons/react": "^2.2.0",
+    "@next/third-parties": "^14.2.13",
+    "@tabler/icons-react": "^3.30.0",
+    "@tailwindcss/typography": "^0.5.16",
+    "@vercel/analytics": "^1.5.0",
+    "body-parser": "^1.20.3",
+    "clsx": "^2.1.1",
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "firebase": "^11.3.1",
+    "framer-motion": "^11.11.9",
+    "motion": "^12.4.7",
+    "next": "^14.2.13",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-icons": "^5.3.0",
+    "react-markdown": "^10.1.0",
+    "tailwind-merge": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.13",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

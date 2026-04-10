@@ -1,0 +1,20 @@
+{
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "hosting": [
+    {
+      "target": "production",
+      "public": "out",
+      "cleanUrls": true,
+      "trailingSlash": false
+    },
+    {
+      "target": "staging",
+      "public": "out",
+      "cleanUrls": true,
+      "trailingSlash": false
+    }
+  ]
+}
